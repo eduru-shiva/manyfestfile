@@ -36,7 +36,7 @@ pipeline {
                    git commit -m "Updated Deployment manyfestfile"
                 """
                 withCredentials([gitUsernamePassword(credentialsId: 'github-new', gitToolName: 'Default')]) {
-                  sh "git push https://github.com/Ashfaque-9x/gitops-register-app main"
+                  sh "https://github.com/eduru-shiva/tomcat-deployment.git master"
                 }
             }
         }
